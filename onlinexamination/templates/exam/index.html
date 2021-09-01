@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+  body{
+    background-image: url('/static/image/students1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+<body>
+  {% include "exam/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <marquee>
+    <h2 class="display-3 text-info">Online Examination System</h2></marquee>
+    <p class="display-4 d-none d-sm-block">Stay calm... its just an exam!</p>
+    <p class="lead">Success</p>
+
+  
+    <p><strong> lets get started:</strong></p>
+    <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sign Up as Student</a>
+    
+    <br><br><br>
+  </div>  
+</section>
+  {% include "exam/footer.html" %}
+
+
+</body>
+
+</html>
