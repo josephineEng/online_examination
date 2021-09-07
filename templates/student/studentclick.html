@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+    .jumbotron{
+      background-image: url('/static/image/students1.jpg');
+    
+    }
+    .display-4{
+        color: white;
+        text-emphasis-style: strong;
+      
+      }
+      .word{
+        color:rgb(24, 98, 236);
+        text-emphasis:strong;
+      }
+      .lead{
+        color: rgb(255, 255, 255);
+        text-emphasis-style: strong;
+      }
+  </style>
+
+</head>
+
+<body>
+
+  {% include "exam/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4"><b>Hello Student,</b></h1>
+    <p class="lead"><b>and Welcome to this exercise </b></p>
+    <hr class="my-4">
+    <p class="word"><b>Select any of them to access the system</p>b></p>
+    <p class="lead">
+      <a class="btn btn-primary " href="studentsignup" style="border-radius: 0%;" role="button">Create Your Account</a>
+      <a class="btn btn-success " href="studentlogin" style="border-radius: 0%;" role="button">Login Now</a>
+    </p>
+    <br><br><br><br><br><br>
+  </div>
+ 
+  {% include "exam/footer.html" %}
+</body>
+
+</html>
